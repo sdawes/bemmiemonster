@@ -1,3 +1,18 @@
+.btn-main {
+  background-color: #ed4e58;
+  color: #eeeef2; }
+  .btn-main:hover {
+    color: #eeeef2;
+    background-color: rgba(237, 78, 88, 0.8); }
 
+#top {
+  background-color: #72c8f9; }
+  #top .content .main-logo {
+    width: 200px;
+    margin-bottom: 10px; }
+  #top .content h2 {
+    margin-bottom: 33px; }
+  #top .content p {
+    margin-bottom: 40px; }
 
 /*# sourceMappingURL=style.css.map */

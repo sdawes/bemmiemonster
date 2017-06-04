@@ -1,0 +1,8 @@
+.btn-main {
+	background-color: $x-color-red;
+	color: $color-white;
+	&:hover {
+		color: $color-white;
+		background-color: rgba($x-color-red, 0.8);
+	}
+}
