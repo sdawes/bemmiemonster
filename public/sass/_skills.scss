@@ -1,0 +1,26 @@
+section#skills {
+	// border: 2px dashed red;
+	background-color: $color-white;
+	padding: 50px;
+	.container {
+		// border: 1px solid cyan;
+		.row {
+			// border: 1px solid pink;
+			margin-top: 30px;
+			.content {
+				.skill {
+					// border: 1px solid red;
+					padding: 30px;
+					img {
+						height: 100px;
+						width: 100px;
+					}
+					h3 {
+						// border: 2px dashed lime;
+					}
+				}
+				
+			}
+		}
+	}
+}

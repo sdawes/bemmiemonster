@@ -39,12 +39,18 @@ a.btn {
 h2 {
   font-size: 24px; }
 
+h3 {
+  font-size: 16px; }
+
 p {
   font-size: 12px; }
 
 @media (min-width: 768px) {
   h2 {
     font-size: 30px; }
+
+  h3 {
+    font-size: 18px; }
 
   p {
     font-size: 14px; } }
@@ -82,5 +88,15 @@ p {
 @media (min-width: 992px) {
   #top {
     background-size: 200px; } }
+section#skills {
+  background-color: #ecf0f1;
+  padding: 50px; }
+  section#skills .container .row {
+    margin-top: 30px; }
+    section#skills .container .row .content .skill {
+      padding: 30px; }
+      section#skills .container .row .content .skill img {
+        height: 100px;
+        width: 100px; }
 
 /*# sourceMappingURL=style.css.map */
