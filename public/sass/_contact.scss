@@ -1,0 +1,32 @@
+form#contact_form {
+	padding: 50px 0;
+	background-color: $color-white;
+	.container {
+		.form-group {
+			padding: 0;
+			label {
+
+			}
+			span.glyphicon.glyphicon-send {
+				margin-left: 5px;
+			}
+			.inputGroupContainer {
+				.input-group {
+					.btn-main {
+
+					}
+					.input-group-addon {
+					}
+					input {
+					}
+				}
+			}
+		}
+
+		#success_message{ display: none;}
+	}
+}
+
+// media queries
+// ==========================================
+

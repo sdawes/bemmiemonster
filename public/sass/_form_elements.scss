@@ -1,0 +1,54 @@
+fieldset {
+	legend {
+		border-bottom: none;
+	}
+}
+.form-group {
+	label {
+
+	}
+	.inputGroupContainer {
+		.input-group {
+			margin-bottom: 20px;
+			.input-group-addon {
+				background-color: $color-white;
+				font-size: 16px; 
+			} 
+			input {
+				height: 50px;
+			}
+		}
+		.glyphicon-remove,
+		.glyphicon-ok {
+			top: 8px;
+			right: 42px;
+			z-index: 5;
+		}
+	}
+}
+
+.form-group.has-error {
+	.inputGroupContainer {
+		.input-group {
+			input, textarea {
+				border: 1px solid $color-special;
+				box-shadow: none;
+			}
+		}
+	}
+}
+
+.form-group.has-success {
+	.inputGroupContainer {
+		.input-group {
+			input, textarea {
+				box-shadow: none;
+			}
+		}
+	}
+}
+
+
+
+// media queries
+// ==========================================

@@ -8,8 +8,12 @@ $x-color-darkGrey: rgba(42, 42, 42, 1);
 
 $color-primary: $x-color-darkGrey;
 $color-secondary: rgba($x-color-darkGrey, 0.5);
+$color-tertiary: $x-color-darkBlue;
+
 $color-highlight: $x-color-lightBlue;
 $color-white: $x-color-lightGrey;
+
+$color-special: $x-color-red;
 
 $font-family-primary: 'Open Sans', sans-serif;
 $font-family-secondary: 'Raleway', serif;

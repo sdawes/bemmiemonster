@@ -1,6 +1,7 @@
 .btn-main {
   background-color: #b32536;
-  color: #ecf0f1; }
+  color: #ecf0f1;
+  font-size: 18px; }
   .btn-main:hover {
     color: #ecf0f1;
     background-color: rgba(179, 37, 54, 0.8); }
@@ -36,24 +37,40 @@ a.btn {
         #sidebar-wrapper .sidebar-nav li a:hover {
           color: #2a2a2a;
           background-color: #72c8f9; } }
-h2 {
+form#contact_form {
+  padding: 50px 0;
+  background-color: #ecf0f1; }
+  form#contact_form .container .form-group {
+    padding: 0; }
+    form#contact_form .container .form-group span.glyphicon.glyphicon-send {
+      margin-left: 5px; }
+  form#contact_form .container #success_message {
+    display: none; }
+
+h1, h2, h3, h4, h5, h6, p, a, label, legend {
+  color: #2a2a2a; }
+
+h2, legend {
   font-size: 24px; }
 
 h3 {
   font-size: 16px; }
 
+h4, label {
+  font-size: 14px; }
+
 p {
   font-size: 12px; }
 
 @media (min-width: 768px) {
-  h2 {
+  h2, legend {
     font-size: 30px; }
 
   h3 {
     font-size: 18px; }
 
-  p {
-    font-size: 14px; } }
+  h4, label {
+    font-size: 16px; } }
 #top {
   background-color: #72c8f9; }
   #top .content .main-logo {
@@ -98,5 +115,28 @@ section#skills {
       section#skills .container .row .content .skill img {
         height: 100px;
         width: 100px; }
+
+fieldset legend {
+  border-bottom: none; }
+
+.form-group .inputGroupContainer .input-group {
+  margin-bottom: 20px; }
+  .form-group .inputGroupContainer .input-group .input-group-addon {
+    background-color: #ecf0f1;
+    font-size: 16px; }
+  .form-group .inputGroupContainer .input-group input {
+    height: 50px; }
+.form-group .inputGroupContainer .glyphicon-remove,
+.form-group .inputGroupContainer .glyphicon-ok {
+  top: 8px;
+  right: 42px;
+  z-index: 5; }
+
+.form-group.has-error .inputGroupContainer .input-group input, .form-group.has-error .inputGroupContainer .input-group textarea {
+  border: 1px solid #b32536;
+  box-shadow: none; }
+
+.form-group.has-success .inputGroupContainer .input-group input, .form-group.has-success .inputGroupContainer .input-group textarea {
+  box-shadow: none; }
 
 /*# sourceMappingURL=style.css.map */
