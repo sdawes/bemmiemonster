@@ -2,18 +2,60 @@
 	background-color: $x-color-lightBlue;
 	.content {
 		.main-logo {
-			width: 200px;
-			margin-bottom: 10px;
+			width: 100px;
+			margin-bottom: 12px;
 		}
 		h2 {
-			margin-bottom: 33px;
+			margin-bottom: 38px;
 		}
 		p {
-			margin-bottom: 40px;
+			margin-bottom: 38px;
 		}
-		a {
+		.social-links {
+			margin-top: 40px;
+			a {
+				width: auto;
+				&:first-child {
+					margin-right: 10px;
+				}
+				&:last-child {
+					margin-left: 10px;
+				}
+			}
+			.icon {
+				width: 35px;
+				display: inline-block;
+			}
 		}
 
+	}
+}
+
+// media queries
+// ==========================================
+
+@media (min-width: 768px) { 
+	#top {
+		background-image: url('../icons/man_1.svg');
+		background-repeat: no-repeat;
+		background-size: 150px;
+		background-position: bottom 3em right 3em;
+		.content {
+			.main-logo {
+				width: 200px;
+			}
+			.social-links {
+				.icon {
+					width: 50px;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 992px) { 
+	#top {
+		background-size: 200px;
 	}
 }
 

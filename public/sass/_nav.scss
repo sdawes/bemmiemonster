@@ -1,0 +1,48 @@
+#sidebar-wrapper {
+	background-color: $color-primary;
+	.sidebar-nav {
+		li {
+			line-height: 50px;
+			&.sidebar-brand {
+				background-color: $x-color-red;
+			}
+			a {
+				color: $color-white;
+				font-size: 18px;
+				&:hover {
+					color: $color-primary;
+					background-color: $color-highlight;
+				}
+			}
+		}
+	}
+}
+
+// media queries
+// ==========================================
+
+@media (min-width: 1200px) {
+	#sidebar-wrapper {
+		&.active {
+			width: 500px;
+		}
+		.sidebar-nav {
+			width: 500px;
+			li {
+				line-height: 50px;
+				&.sidebar-brand {
+					background-color: $x-color-red;
+				}
+				a {
+					color: $color-white;
+					font-size: 18px;
+					&:hover {
+						color: $color-primary;
+						background-color: $color-highlight;
+					}
+				}
+			}
+		}
+	}
+}
+
