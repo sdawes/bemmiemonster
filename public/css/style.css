@@ -111,7 +111,7 @@ section#skills {
   section#skills .container .row {
     margin-top: 30px; }
     section#skills .container .row .content .skill {
-      padding: 30px; }
+      padding: 20px; }
       section#skills .container .row .content .skill img {
         height: 100px;
         width: 100px; }
@@ -122,21 +122,28 @@ fieldset legend {
 .form-group .inputGroupContainer .input-group {
   margin-bottom: 20px; }
   .form-group .inputGroupContainer .input-group .input-group-addon {
-    background-color: #ecf0f1;
-    font-size: 16px; }
+    background-color: rgba(45, 53, 64, 0.2);
+    font-size: 16px;
+    border: none; }
   .form-group .inputGroupContainer .input-group input {
-    height: 50px; }
+    height: 50px;
+    border: none; }
+  .form-group .inputGroupContainer .input-group textarea {
+    border: none; }
 .form-group .inputGroupContainer .glyphicon-remove,
 .form-group .inputGroupContainer .glyphicon-ok {
   top: 8px;
   right: 42px;
   z-index: 5; }
 
-.form-group.has-error .inputGroupContainer .input-group input, .form-group.has-error .inputGroupContainer .input-group textarea {
-  border: 1px solid #b32536;
-  box-shadow: none; }
+.form-group.has-error .inputGroupContainer .input-group {
+  border: 1px solid #b32536; }
+  .form-group.has-error .inputGroupContainer .input-group input, .form-group.has-error .inputGroupContainer .input-group textarea {
+    box-shadow: none; }
 
-.form-group.has-success .inputGroupContainer .input-group input, .form-group.has-success .inputGroupContainer .input-group textarea {
-  box-shadow: none; }
+.form-group.has-success .inputGroupContainer .input-group {
+  border: 1px solid green; }
+  .form-group.has-success .inputGroupContainer .input-group input, .form-group.has-success .inputGroupContainer .input-group textarea {
+    box-shadow: none; }
 
 /*# sourceMappingURL=style.css.map */

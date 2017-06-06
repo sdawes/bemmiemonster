@@ -1,16 +1,16 @@
-form#contact_form(action=' ', method='post')
+form#contact_form(action='contact/send', method='POST')
     .container
         fieldset
             // Form Name
             legend.text-center Contact Me
-            // Text input
+            // Text Input
             .form-group.col-md-6
                 label.col-xs-12.control-label First Name
                 .col-xs-12.inputGroupContainer
                     .input-group
                         span.input-group-addon
                             i.glyphicon.glyphicon-user
-                        input.form-control(name='first_name', placeholder='First Name', type='text')
+                        input#f_firstName.form-control(name='first_name', placeholder='First Name', type='text')
             // Text input
             .form-group.col-md-6
                 label.col-xs-12.control-label Last Name
@@ -18,7 +18,7 @@ form#contact_form(action=' ', method='post')
                     .input-group
                         span.input-group-addon
                             i.glyphicon.glyphicon-user
-                        input.form-control(name='last_name', placeholder='Last Name', type='text')
+                        input#f_surname.form-control(name='last_name', placeholder='Last Name', type='text')
             // Text input
             .form-group.col-md-6
                 label.col-xs-12.control-label E-Mail
@@ -26,7 +26,7 @@ form#contact_form(action=' ', method='post')
                     .input-group
                         span.input-group-addon
                             i.glyphicon.glyphicon-envelope
-                        input.form-control(name='email', placeholder='E-Mail Address', type='text')
+                        input#f_email.form-control(name='email', placeholder='E-Mail Address', type='text')
             // Text input
             .form-group.col-md-6
                 label.col-xs-12.control-label Phone Number
@@ -34,7 +34,7 @@ form#contact_form(action=' ', method='post')
                     .input-group
                         span.input-group-addon
                             i.glyphicon.glyphicon-earphone
-                        input.form-control(name='phone', placeholder='0771234567', type='text')
+                        input#f_number.form-control(name='phone', placeholder='0771234567', type='text')
             // Text area
             .form-group
                 label.col-xs-12.control-label Message
@@ -42,17 +42,12 @@ form#contact_form(action=' ', method='post')
                     .input-group
                         span.input-group-addon
                             i.glyphicon.glyphicon-pencil
-                        textarea.form-control(name='message', placeholder='Message', rows='5')
-            // Success message
-            #success_message.alert.alert-success(role='alert')
-                | Success 
-                i.glyphicon.glyphicon-thumbs-up
-                |  Thanks for contacting us, we will get back to you shortly.
+                        textarea#f_message.form-control(name='message', placeholder='Message', rows='5')
             // Button
-            .form-group.text-center
+            .text-center
                 label.col-xs-12.control-label
                 .col-xs-12
-                    button.btn.btn-main(type='submit')
+                    button#f_submit.btn.btn-main(type='submit')
                         | Send 
                         span.glyphicon.glyphicon-send
 

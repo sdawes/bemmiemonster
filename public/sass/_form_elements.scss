@@ -11,11 +11,16 @@ fieldset {
 		.input-group {
 			margin-bottom: 20px;
 			.input-group-addon {
-				background-color: $color-white;
+				background-color: rgba($color-tertiary, 0.2);
 				font-size: 16px; 
+				border: none;
 			} 
 			input {
 				height: 50px;
+				border: none;
+			}
+			textarea {
+				border: none;
 			}
 		}
 		.glyphicon-remove,
@@ -30,10 +35,11 @@ fieldset {
 .form-group.has-error {
 	.inputGroupContainer {
 		.input-group {
+			border: 1px solid $color-special;
 			input, textarea {
-				border: 1px solid $color-special;
 				box-shadow: none;
 			}
+			
 		}
 	}
 }
@@ -41,11 +47,17 @@ fieldset {
 .form-group.has-success {
 	.inputGroupContainer {
 		.input-group {
+			border: 1px solid green;
 			input, textarea {
 				box-shadow: none;
 			}
+				
 		}
 	}
+}
+
+#success-message {
+	
 }
 
 
