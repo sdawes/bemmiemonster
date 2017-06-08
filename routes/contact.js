@@ -13,7 +13,7 @@ router.post('/send', function(req, res, next){
 
 	// create reusable transporter object using the default SMTP transport
 	var transporter = nodemailer.createTransport({
-	    host: 'smtp-mail.outlook.com',
+	    host: 'smtp-relay.sendinblue.com',
 	    port: 587,
 	    secure: false, // secure:true for port 465, secure:false for port 587
 	    tls: {
@@ -21,13 +21,13 @@ router.post('/send', function(req, res, next){
 	    },
 	    auth: {
 	        user: 'sdawes@outlook.com',
-	        pass: process.env.PASS_OUTLOOK
+	        pass: process.env.PASS_SENDINBLUE
 	    }
 	});
 
 	// setup email data with unicode symbols
 	var mailOptions = {
-	    from: '"Fred Foo 👻" <sdawes@outlook.com>', // sender address
+	    from: 'bemmiemonster.com <bemmiemonster@gmail.com>', // sender address
 	    to: 'sdawes@outlook.com', // list of receivers
 	    subject: '😍 New message from your website!', // Subject line
 	    text: '😍 You have a new message from your website with the following details: Name: ' +req.body.first_name + 'Surname: ' + req.body.last_name + 'Email: ' + req.body.email + 'Phone Number: ' + req.body.number + 'Message: ' + req.body.message, // plain text body
