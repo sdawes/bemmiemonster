@@ -1,8 +1,9 @@
+require('dotenv').config(); 
+
 var express = require('express');
 var router = express.Router();
 var bodyParser = require('body-parser');
 var nodemailer = require('nodemailer');
-require('dotenv').config(); 
 
 router.get('/', function(req, res, next) {
 	res.render('contact');
@@ -20,7 +21,7 @@ router.post('/send', function(req, res, next){
 	    },
 	    auth: {
 	        user: 'sdawes@outlook.com',
-	        pass: 'PASS_OUTLOOK'
+	        pass: process.env.PASS_OUTLOOK
 	    }
 	});
 
