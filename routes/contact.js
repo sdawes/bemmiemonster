@@ -38,10 +38,10 @@ router.post('/send', function(req, res, next){
 	transporter.sendMail(mailOptions, function(error, info) {
 	    if (error) {
 	        console.log(error);
-	        res.redirect('/index');
+	        res.redirect('/');
 	    } else {
 	    	console.log('Message sent: ' + info.response);
-	    	res.redirect('/index');
+	    	res.redirect('/');
 	    	
 	    }
 	    
