@@ -10,16 +10,42 @@ section#skills {
 			.content {
 				.skill {
 					// border: 1px solid red;
-					padding: 20px;
+					padding: 16px;
 					img {
-						height: 100px;
-						width: 100px;
+						height: 50px;
+						width: 50px;
 					}
 					h3 {
-						// border: 2px dashed lime;
+						display: none;
 					}
 				}
 				
+			}
+		}
+	}
+}
+
+// media queries
+// ==========================================
+
+@media (min-width: 768px) {
+	section#skills {
+
+		.container {
+
+			.row {
+				.content {
+					.skill {
+						padding: 16px;
+						img {
+							height: 100px;
+							width: 100px;
+						}
+						h3 {
+						}
+					}
+					
+				}
 			}
 		}
 	}

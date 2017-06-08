@@ -3,51 +3,60 @@ form#contact_form(action='contact/send', method='POST')
         fieldset
             // Form Name
             legend.text-center Contact Me
-            // Text Input
-            .form-group.col-md-6
-                label.col-xs-12.control-label First Name
-                .col-xs-12.inputGroupContainer
-                    .input-group
-                        span.input-group-addon
-                            i.glyphicon.glyphicon-user
-                        input#f_firstName.form-control(name='first_name', placeholder='First Name', type='text')
-            // Text input
-            .form-group.col-md-6
-                label.col-xs-12.control-label Last Name
-                .col-xs-12.inputGroupContainer
-                    .input-group
-                        span.input-group-addon
-                            i.glyphicon.glyphicon-user
-                        input#f_surname.form-control(name='last_name', placeholder='Last Name', type='text')
-            // Text input
-            .form-group.col-md-6
-                label.col-xs-12.control-label E-Mail
-                .col-xs-12.inputGroupContainer
-                    .input-group
-                        span.input-group-addon
-                            i.glyphicon.glyphicon-envelope
-                        input#f_email.form-control(name='email', placeholder='E-Mail Address', type='text')
-            // Text input
-            .form-group.col-md-6
-                label.col-xs-12.control-label Phone Number
-                .col-xs-12.inputGroupContainer
-                    .input-group
-                        span.input-group-addon
-                            i.glyphicon.glyphicon-earphone
-                        input#f_number.form-control(name='phone', placeholder='0771234567', type='text')
-            // Text area
-            .form-group
-                label.col-xs-12.control-label Message
-                .col-xs-12.inputGroupContainer
-                    .input-group
-                        span.input-group-addon
-                            i.glyphicon.glyphicon-pencil
-                        textarea#f_message.form-control(name='message', placeholder='Message', rows='5')
+
+            .form-row.col-md-12
+
+                // Text Input
+                .form-group.col-md-6
+                    label.col-xs-12.control-label First Name
+                    .col-xs-12.inputGroupContainer
+                        .input-group
+                            span.input-group-addon
+                                i.glyphicon.glyphicon-user
+                            input#f_firstName.form-control(name='first_name', placeholder='First Name', type='text')
+                // Text input
+                .form-group.col-md-6
+                    label.col-xs-12.control-label Last Name
+                    .col-xs-12.inputGroupContainer
+                        .input-group
+                            span.input-group-addon
+                                i.glyphicon.glyphicon-user
+                            input#f_surname.form-control(name='last_name', placeholder='Last Name', type='text')
+
+            .form-row.col-md-12
+            
+                // Text input
+                .form-group.col-md-6
+                    label.col-xs-12.control-label E-Mail
+                    .col-xs-12.inputGroupContainer
+                        .input-group
+                            span.input-group-addon
+                                i.glyphicon.glyphicon-envelope
+                            input#f_email.form-control(name='email', placeholder='E-Mail Address', type='text')
+                // Text input
+                .form-group.col-md-6
+                    label.col-xs-12.control-label Phone Number
+                    .col-xs-12.inputGroupContainer
+                        .input-group
+                            span.input-group-addon
+                                i.glyphicon.glyphicon-earphone
+                            input#f_number.form-control(name='phone', placeholder='0771234567', type='text')
+
+            .form-row.col-md-12              
+                // Text area
+                .form-group
+                    label.col-xs-12.control-label Message
+                    .col-xs-12.inputGroupContainer.text-area
+                        .input-group
+                            span.input-group-addon
+                                i.glyphicon.glyphicon-pencil
+                            textarea#f_message.form-control(name='message', placeholder='Message', rows='5')
+
+            .form-row.col-md-12
             // Button
             .text-center
-                label.col-xs-12.control-label
                 .col-xs-12
-                    button#f_submit.btn.btn-main(type='submit')
+                    button#contact_submit.btn.btn-main(type='submit')
                         | Send 
                         span.glyphicon.glyphicon-send
 

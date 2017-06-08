@@ -37,11 +37,12 @@ router.post('/send', function(req, res, next){
 	// send mail with defined transport object
 	transporter.sendMail(mailOptions, function(error, info) {
 	    if (error) {
-	        return console.log(error);
-	        res.redirect('/contact');
+	        console.log(error);
+	        res.redirect('/index');
 	    } else {
 	    	console.log('Message sent: ' + info.response);
-	    	res.redirect('/');
+	    	res.redirect('/index');
+	    	
 	    }
 	    
 	});
