@@ -21,6 +21,8 @@ a.btn {
       #sidebar-wrapper .sidebar-nav li a:hover {
         color: #2a2a2a;
         background-color: #72c8f9; }
+    #sidebar-wrapper .sidebar-nav li.sidebar-brand:hover {
+      background-color: #72c8f9; }
 
 @media (min-width: 1200px) {
   #sidebar-wrapper.active {
