@@ -1,0 +1,36 @@
+section#about
+	.container
+		// Page Header
+		.row
+			.col-lg-12
+				h2.text-center 
+					| How my site was built
+
+		.content
+			// Projects Row
+			.row
+				.col-md-6.portfolio-item
+					img.img-responsive(src='../img/build_jade.jpg', alt='Bootstrap and Jade screenshot')
+					h3 Bootstrap and Jade
+					p
+						| I decided to use Bootstrap as it offered an excellent CSS framework in which to use. I particulary liked the 12 column CSS Grid. Working in Jade meant that I could add embedded JavaScript with ease and I found it a pleasure to use. 
+				.col-md-6.portfolio-item
+					img.img-responsive(src='../img/build_sass.jpg', alt='scss screen shot')
+					h3 SASS      
+					p
+						| The CSS is written in SCSS and compiled into CSS. Each partial of markup is styled with a separate SCSS file, the compiled CSS file being required after the default bootstrap and bootstrap theme css file. 
+			
+			// Projects Row
+			.row
+				.col-md-6.portfolio-item
+					img.img-responsive(src='../img/build_node.jpg', alt='node.js screen shot')
+					h3 node.js   
+					p
+						| I needed to build a server-side framework to host my site and wanted to make the site modular for ease in scalability and maintenance. I decided on node.js as it is written in JavaScript and I knew it had a large library of modules I could use through npm. I have used a number of jade template views extending from a layout file, included jade elements as partials and added routes, to build the site in a modular way, which works really well. 
+				.col-md-6.portfolio-item
+					img.img-responsive(src='../img/build_npm.jpg', alt='npm screen shot')
+					h3 npm  
+					p
+						| I have used the JavaScript package manager to include a number of packages, in particular nodemailer, to send HTML form data through to my email. I used this in conjunction with sendinblue, an email marketing soltuion, to act as my SMTP account. Other packages used include body-paser and express. 
+			// /.row
+		

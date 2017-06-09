@@ -165,4 +165,9 @@ fieldset legend {
   .form-group.has-success .inputGroupContainer .input-group input, .form-group.has-success .inputGroupContainer .input-group textarea {
     box-shadow: none; }
 
+#about {
+  padding: 50px 0; }
+  #about .container .content {
+    margin-top: 30px; }
+
 /*# sourceMappingURL=style.css.map */
