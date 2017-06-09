@@ -81,7 +81,10 @@ p {
     font-size: 18px; }
 
   h4, label {
-    font-size: 16px; } }
+    font-size: 16px; }
+
+  p {
+    font-size: 14px; } }
 #top {
   background-color: #72c8f9; }
   #top .content .main-logo {
@@ -169,5 +172,36 @@ fieldset legend {
   padding: 50px 0; }
   #build .container .content {
     margin-top: 30px; }
+
+#about {
+  padding: 50px 0;
+  background-color: #ecf0f1; }
+  #about .container .content {
+    margin-top: 30px; }
+    #about .container .content img {
+      display: none; }
+    #about .container .content .social-links {
+      margin-top: 40px; }
+      #about .container .content .social-links a {
+        width: auto; }
+        #about .container .content .social-links a:first-child {
+          margin-right: 10px; }
+        #about .container .content .social-links a:last-child {
+          margin-left: 10px; }
+      #about .container .content .social-links .icon {
+        width: 35px;
+        display: inline-block; }
+    #about .container .content hr {
+      border-top: 1px solid rgba(42, 42, 42, 0.1); }
+
+@media (min-width: 768px) {
+  #about {
+    background-image: url("../icons/monster_4.svg");
+    background-repeat: no-repeat;
+    background-size: 150px;
+    background-position: bottom 3em left 3em; }
+    #about .container .content img {
+      display: block;
+      width: 125px; } }
 
 /*# sourceMappingURL=style.css.map */

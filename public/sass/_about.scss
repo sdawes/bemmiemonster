@@ -1,0 +1,51 @@
+#about {
+	padding: 50px 0;
+	background-color: $color-white;
+	.container {
+		.content {
+			margin-top: 30px;
+			img {
+				display: none;
+			}
+			.social-links {
+				margin-top: 40px;
+				a {
+					width: auto;
+					&:first-child {
+						margin-right: 10px;
+					}
+					&:last-child {
+						margin-left: 10px;
+					}
+				}
+				.icon {
+					width: 35px;
+					display: inline-block;
+				}
+			}
+			hr {
+				border-top: 1px solid rgba($color-primary, 0.1);
+			}
+		}
+	}
+}
+
+// media queries
+// ==========================================
+
+@media (min-width:768px) {
+	#about {
+		background-image: url('../icons/monster_4.svg');
+		background-repeat: no-repeat;
+		background-size: 150px;
+		background-position: bottom 3em left 3em;
+		.container {
+			.content {
+				img {
+					display: block;
+					width: 125px;
+				}
+			}
+		}
+	}
+}
