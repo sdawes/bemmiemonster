@@ -11,6 +11,7 @@ var upload = multer();
 
 var index = require('./routes/index.js');
 var users = require('./routes/users.js');
+var reactApp = require('./routes/reactApp.js');
 // var contact = require('./routes/contact.js');
 
 var app = express();
@@ -29,6 +30,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
 app.use('/users', users);
+app.use('/reactApp', reactApp);
 // app.use('/contact', contact);
 
 // catch 404 and forward to error handler
