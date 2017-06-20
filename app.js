@@ -12,6 +12,8 @@ var upload = multer();
 var index = require('./routes/index.js');
 var users = require('./routes/users.js');
 var reactApp = require('./routes/reactApp.js');
+var codewars = require('./routes/codewars.js');
+var twitter = require('./routes/twitter.js');
 // var contact = require('./routes/contact.js');
 
 var app = express();
@@ -28,9 +30,13 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+
+// routes
 app.use('/', index);
 app.use('/users', users);
 app.use('/reactApp', reactApp);
+app.use('/codewars', codewars);
+app.use('/twitter', twitter);
 // app.use('/contact', contact);
 
 // catch 404 and forward to error handler

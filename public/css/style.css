@@ -203,5 +203,13 @@ fieldset legend {
     #about .container .content img {
       display: block;
       width: 125px; } }
+#tech-demos {
+  padding: 50px 0; }
+  #tech-demos .container .row .btn {
+    margin-top: 15px; }
+  #tech-demos .container .content {
+    margin-top: 30px; }
+    #tech-demos .container .content h3 {
+      font-weight: 700; }
 
 /*# sourceMappingURL=style.css.map */

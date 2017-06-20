@@ -1,5 +1,5 @@
 {
-  "name": "podeg",
+  "name": "stevedawes",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -13,6 +13,8 @@
     "dotenv": "^4.0.0",
     "express": "~4.15.2",
     "jade": "~1.11.0",
+    "mongodb": "^2.2.29",
+    "mongoose": "^4.10.7",
     "morgan": "~1.8.1",
     "multer": "^1.3.0",
     "nodemailer": "^4.0.1",
