@@ -6,7 +6,7 @@ block content
 		div.row
 			div.col-md-6.col-md-offset-3
 				h1.text-center Follow Back List
-				form(action="get_users", method="POST")
+				form(action="/twitter", method="POST")
 					input.form-control(type="text", name="twitter_name", placeholder="Enter Name")
 					input.form-control.btn.btn-primary(type="submit", value="Get Users")
 
