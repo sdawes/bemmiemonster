@@ -88,7 +88,7 @@ p {
 #top {
   background-color: #72c8f9; }
   #top .content .main-logo {
-    width: 80px;
+    width: 120px;
     margin-bottom: 12px; }
   #top .content h2 {
     margin-bottom: 38px; }
@@ -113,7 +113,7 @@ p {
     background-size: 150px;
     background-position: bottom 3em right 3em; }
     #top .content .main-logo {
-      width: 200px; }
+      width: 250px; }
     #top .content .social-links .icon {
       width: 50px; } }
 @media (min-width: 992px) {

@@ -48,7 +48,7 @@ client.get('followers/ids', params, function(error, followers_results, response)
 	// turn array into a string
 	var one_way_following_string = one_way_following.join();
 
-	client.get('users/lookup', {user_id: '255634108'}, function(error, users_results, response) {
+	client.get('users/lookup', {user_id: one_way_following_string}, function(error, users_results, response) {
 
 		users_results.forEach(function(user) {
 			var userObject = {
@@ -59,7 +59,7 @@ client.get('followers/ids', params, function(error, followers_results, response)
 
 			users_to_display.push(userObject);
 		});
-		console.log(users_results);
+		console.log(users_to_display);
 	});
 
 	
