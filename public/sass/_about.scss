@@ -1,30 +1,23 @@
-#about {
-	padding: 50px 0;
+section#about {
+	// border: 2px dashed red;
 	background-color: $color-white;
+	padding: 50px;
 	.container {
-		.content {
+		// border: 1px solid cyan;
+		.row {
+			// border: 1px solid pink;
 			margin-top: 30px;
-			img {
-				display: none;
-			}
-			.social-links {
-				margin-top: 40px;
-				a {
-					width: auto;
-					&:first-child {
-						margin-right: 10px;
+			.content {
+				.about {
+					// border: 1px solid red;
+					padding: 16px;
+					img {
+						height: 50px;
+						// width: 50px;
 					}
-					&:last-child {
-						margin-left: 10px;
-					}
+					h3 {					}
 				}
-				.icon {
-					width: 35px;
-					display: inline-block;
-				}
-			}
-			hr {
-				border-top: 1px solid rgba($color-primary, 0.1);
+				
 			}
 		}
 	}
@@ -33,17 +26,23 @@
 // media queries
 // ==========================================
 
-@media (min-width:768px) {
-	#about {
-		background-image: url('../icons/monster_4.svg');
-		background-repeat: no-repeat;
-		background-size: 150px;
-		background-position: bottom 3em left 3em;
+@media (min-width: 768px) {
+	section#about {
+
 		.container {
-			.content {
-				img {
-					display: block;
-					width: 125px;
+
+			.row {
+				.content {
+					.about {
+						padding: 16px;
+						img {
+							height: 100px;
+							// width: 100px;
+						}
+						h3 {
+						}
+					}
+					
 				}
 			}
 		}
